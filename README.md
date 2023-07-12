@@ -14,6 +14,9 @@ Built with ___
 
 ## Screenshots and demo
 Screenshots of your app and/or a link to your live demo
+<div align="center" style="width=100%">
+  <img src="https://github.com/abel-cosmic/ColorPaletteGenerator/blob/main/assets/screenshot.png" alt="screenshot"/>
+</div>
 
 ## Installation
 Instructions for other developers on how to install and run your code on their local environment.
