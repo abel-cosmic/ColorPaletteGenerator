@@ -7,9 +7,9 @@ Find the project requirements here: [Random color palette generator web app](htt
 Built with ___
 
 <div align="center">
-  <img src="[https://path.to.react.icon](https://github.com/abel-cosmic/ColorPaletteGenerator/blob/main/assets/icons8-react-16.png)" alt="React" width="100" height="100" />
-  <img src="https://path.to.tailwindcss.icon" alt="Tailwind CSS" width="100" height="100" />
-  <img src="https://path.to.typescript.icon" alt="TypeScript" width="100" height="100" />
+  <img src="https://github.com/abel-cosmic/ColorPaletteGenerator/blob/main/assets/icons8-react-16.png"  width="100" height="100" />
+  <img src="https://github.com/abel-cosmic/ColorPaletteGenerator/blob/main/assets/icons8-tailwindcss-48.png" alt="Tailwind CSS" width="100" height="100" />
+  <img src="https://github.com/abel-cosmic/ColorPaletteGenerator/blob/main/assets/icons8-typescript-48.png" alt="TypeScript" width="100" height="100" />
 </div>
 
 ## Screenshots and demo
