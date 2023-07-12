@@ -4,7 +4,7 @@ This is an open source project from [DevProjects](http://www.codementor.io/proje
 Find the project requirements here: [Random color palette generator web app](https://www.codementor.io/projects/web/random-color-palette-generator-web-app-ccdljvurh6)
 
 ## Tech/framework used
-Built with ___
+Built with ___  React, Tailwindcss &Typescript.
 
 ## Screenshots and demo
 Screenshots of your app and/or a link to your live demo
