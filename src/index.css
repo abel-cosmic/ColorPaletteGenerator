@@ -8,4 +8,16 @@
   color:#0C1226;
   background-color: #E8ECF3;
 }
+.custom-toast {
+  background-color: #333;
+  color: #fff;
+  border-radius: 10rem;
+}
 
+.custom-toast-body {
+  padding: 2rem;
+}
+
+.custom-toast-progress {
+  background-color: #fff;
+}
