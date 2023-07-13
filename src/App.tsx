@@ -73,7 +73,7 @@ const App: React.FC = () => {
   return (
     <div className="flex flex-col items-center gap-8">
      {toastHex && <CustomToast hexValue={toastHex} />}
-      <div className="flex flex-col items-center text-2xl font-extrabold mt-32">
+      <div className="flex flex-col items-center text-2xl font-extrabold mt-20">
         Color palette generator
       </div>
       <div className="flex flex-row flex-wrap justify-between px-16">
@@ -101,10 +101,10 @@ const App: React.FC = () => {
         />
 
       </div>
-      <div className="flex felx-row">
+      <div className="flex felx-row max-md:text-[0.7rem]">
         Or just press the "Spacebar" to generate new palettes.
       </div>
-      <div className="px-8 py-4 bg-white rounded-full mb-10">
+      <div className="px-8 py-4 bg-white rounded-full mb-10 max-md:text-[0.7rem]">
         Click to copy individual color . Press "C" to copy palette
       </div>
     </div>

@@ -23,7 +23,7 @@ const CustomToast: React.FC<ToastProps> = ({hexValue}) => {
 
   return (
     <div 
-      className="fixed top-4 left-1/2 -translate-x-1/2 p-4 rounded-full bg-gray-900 text-white text-center"  
+      className="fixed top-4 left-1/2 -translate-x-1/2 p-4 rounded-full bg-gray-900 text-white text-center max-md:text-[0.6rem]"  
       style={{width: '40rem'}}
     >
       Color {hexValue.toLocaleUpperCase()} copied to your clipboard
