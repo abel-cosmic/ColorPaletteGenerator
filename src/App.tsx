@@ -70,6 +70,33 @@ const App: React.FC = () => {
     });
   }, [colors]);
 
+  let buttons = [
+    {
+      id: 1,
+      text: "Generate palette",
+      padding: "1rem 6rem",
+      function: () => setColors(generatePalette()),
+      backgroundColor: "#088395",
+      textColor: "#fff",
+    },
+    {
+      id: 2,
+      text: "Add Card",
+      padding: "1rem 6rem",
+      function: addCard,
+      backgroundColor: "#f6f8fc",
+      textColor: "#202124",
+    },
+    {
+      id: 3,
+      text: "Delete Card",
+      padding: "1rem 6rem",
+      function: deleteCard,
+      backgroundColor: "#f00",
+      textColor: "#fff",
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center gap-8">
       {toastHex && <CustomToast hexValue={toastHex} />}
@@ -81,29 +108,18 @@ const App: React.FC = () => {
       </div>
 
       <div className="flex flex-row items-center justify-center gap-10 my-10 max-md:flex-col">
-        <CustomButton
-          text="Generate palette"
-          padding="1rem 6rem"
-          onClick={() => setColors(generatePalette())}
-          backgroundColor="#088395"
-        />
-
-        <CustomButton
-          text="Add Card"
-          padding="1rem 6rem"
-          onClick={addCard}
-          backgroundColor="#f6f8fc"
-          textColor="#202124"
-        />
-
-        <CustomButton
-          text="Delete Card"
-          padding="1rem 6rem"
-          onClick={deleteCard}
-          backgroundColor="#f00"
-          textColor="#fff"
-        />
+        {buttons.map((button) => (
+          <CustomButton
+            key={button.id}
+            text={button.text}
+            padding={button.padding}
+            onClick={button.function}
+            backgroundColor={button.backgroundColor}
+            textColor={button.textColor}
+          />
+        ))}
       </div>
+
       <div className="flex felx-row max-md:text-[0.7rem]">
         Or just press the "Spacebar" to generate new palettes.
       </div>
