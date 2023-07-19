@@ -1,3 +1,11 @@
+/**
+ * Made by Abel Shibabaw (github.com/abel-cosmic)
+ * library used: react 18 + vite
+ * language used: typoescript
+ * this repo is hosted using  netlify and can find the deployed version in the 
+ * (https://color-palette-generat.netlify.app/)
+ */
+
 import React, { useEffect, useState } from "react";
 import Card from "./components/Card";
 import CustomButton from "./components/CustomButton";
