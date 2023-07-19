@@ -4,13 +4,13 @@ import CustomButton from "./components/CustomButton";
 import CustomToast from "./components/CustomToast";
 
 const App: React.FC = () => {
+  // this are the declarations
   const minCardCount = 4;
   const maxCardCount = 5;
-
   const [colors, setColors] = useState<string[]>(generatePalette());
-
   const [toastHex, setToastHex] = useState<string>("");
 
+  //the function that controls generating the palettes
   function generatePalette(): string[] {
     const cardCount =
       Math.floor(Math.random() * (maxCardCount - minCardCount + 1)) +
@@ -22,19 +22,24 @@ const App: React.FC = () => {
     }
     return palette;
   }
+  //the function that controls the random colors displayed with in the palettes
   function generateRandomColor(): string {
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     return `#${randomColor}`;
   }
+  //the function that add card button calls to add new card.
   const addCard = () => {
     const randomColor = generateRandomColor();
     setColors((prevColors) => [...prevColors, randomColor]);
   };
+  //the function that the delete card button calls to delete  the last entry of card
   const deleteCard = () => {
     if (colors.length > 0) {
       setColors((prevColors) => prevColors.slice(0, prevColors.length - 1));
     }
   };
+
+  //the function that is called when the user clicks  spacebar, c or a card  to show toast message
   const showToast = (hex: string) => {
     setToastHex(hex);
 
@@ -42,11 +47,13 @@ const App: React.FC = () => {
       setToastHex("");
     }, 1000);
   };
+
+  //this function is added to the cards to call the showToast function and to save the selection to the clipboard
   const handleCardClick = (color: string) => {
     showToast(color);
     navigator.clipboard.writeText(color);
   };
-
+  //this is the key events controller function using useEffect
   useEffect(() => {
     const onSpacePress = () => {
       setColors(generatePalette());
